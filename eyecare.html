@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Care Resources | Project Nethsuwa</title>
+    <meta name="description" content="Access educational resources about common eye conditions like Myopia, Hyperopia, and Cataracts. Find trusted vision care partners.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.4/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.jpg" alt="Project Nethsuwa Logo" class="nav-logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="eyecare.html" class="active-link">Eye Care</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-btn" id="menu-toggle">
+                    <i data-lucide="menu"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="height: 50vh; min-height: 400px; background: linear-gradient(135deg, #fffcfb 0%, #fff5f2 100%);">
+        <div class="container">
+            <div class="hero-content reveal active">
+                <h1>Eye Care <span style="color: var(--accent);">Awareness</span></h1>
+                <p>Knowledge is the first step toward prevention. Explore our resources to understand and protect your vision.</p>
+                <div class="hero-btns" style="margin-top: 30px;">
+                    <button id="open-check-modal" class="btn btn-primary">
+                        <i data-lucide="activity" style="display: inline-block; vertical-align: middle; margin-right: 8px;"></i>
+                        Self-Check Your Vision
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Check Modal -->
+    <div id="check-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <div class="icon-box" style="width: 60px; height: 60px; margin: 0 auto 20px;"><i data-lucide="eye"></i></div>
+                <h2>Vision Self-Check</h2>
+                <p>Assess your vision health with this simple online tool.</p>
+            </div>
+            <div class="modal-body">
+                <p>We've partnered with external resources to provide a quick way for you to check your vision. This is not a replacement for a professional exam but can help identify early concerns.</p>
+                <a href="https://share.google/wu3LperGy6xqTf0e7" target="_blank" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Start Self-Check Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conditions Section -->
+    <section class="about">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Common Eye Conditions</h2>
+                <p>Understanding the challenges your eyes might face and how to manage them.</p>
+            </div>
+            
+            <div class="resource-grid">
+                <!-- Myopia -->
+                <div class="resource-card reveal">
+                    <div class="icon-box"><i data-lucide="eye"></i></div>
+                    <h3>Myopia (Nearsightedness)</h3>
+                    <p>Difficulty seeing distant objects clearly, while close-up vision remains sharp. Caused by an elongated eyeball or overly curved cornea.</p>
+                    <div class="condition-details">
+                        <h4>Symptoms:</h4>
+                        <ul>
+                            <li>Blurry distant vision</li>
+                            <li>Squinting, eye strain</li>
+                            <li>Headaches</li>
+                        </ul>
+                        <h4>Management:</h4>
+                        <p>Corrected with concave lenses (glasses/contacts) or refractive surgery like LASIK to reshape the cornea.</p>
+                    </div>
+                </div>
+                
+                <!-- Hyperopia -->
+                <div class="resource-card reveal">
+                    <div class="icon-box"><i data-lucide="eye-off"></i></div>
+                    <h3>Hyperopia (Farsightedness)</h3>
+                    <p>Distant objects are clearer, but focusing on near tasks causes blurriness. Occurs when the eyeball is too short or the cornea is too flat.</p>
+                    <div class="condition-details">
+                        <h4>Symptoms:</h4>
+                        <ul>
+                            <li>Blurry near vision</li>
+                            <li>Aching eyes or burning</li>
+                            <li>Focusing difficulties</li>
+                        </ul>
+                        <h4>Management:</h4>
+                        <p>Corrected with convex lenses that help light focus properly on the retina. Surgery is also an option for adults.</p>
+                    </div>
+                </div>
+
+                <!-- Astigmatism -->
+                <div class="resource-card reveal">
+                    <div class="icon-box"><i data-lucide="move"></i></div>
+                    <h3>Astigmatism</h3>
+                    <p>Distorted or blurred vision at all distances due to an irregularly shaped cornea or lens (shaped more like a football than a basketball).</p>
+                    <div class="condition-details">
+                        <h4>Symptoms:</h4>
+                        <ul>
+                            <li>Distorted/blurry vision</li>
+                            <li>Poor night vision</li>
+                            <li>Headaches & fatigue</li>
+                        </ul>
+                        <h4>Management:</h4>
+                        <p>Corrected with cylindrical lenses in glasses or specialized "toric" contact lenses. Reshaping surgery is often effective.</p>
+                    </div>
+                </div>
+                
+                <!-- Cataracts -->
+                <div class="resource-card reveal">
+                    <div class="icon-box"><i data-lucide="cloud"></i></div>
+                    <h3>Cataracts</h3>
+                    <p>A clouding of the natural lens, progressively blocking light. It's the leading cause of blindness worldwide, often related to aging.</p>
+                    <div class="condition-details">
+                        <h4>Symptoms:</h4>
+                        <ul>
+                            <li>Foggy/blurry vision</li>
+                            <li>Sensitivity to glare</li>
+                            <li>Fading color perception</li>
+                        </ul>
+                        <h4>Management:</h4>
+                        <p>Standard treatment is surgical replacement of the clouded lens with a clear artificial intraocular lens (IOL).</p>
+                    </div>
+                </div>
+
+                <!-- Glaucoma -->
+                <div class="resource-card reveal">
+                    <div class="icon-box"><i data-lucide="alert-circle"></i></div>
+                    <h3>Glaucoma</h3>
+                    <p>Damages the optic nerve, often due to high internal eye pressure. Known as the "silent thief of sight" because it has few early symptoms.</p>
+                    <div class="condition-details">
+                        <h4>Symptoms:</h4>
+                        <ul>
+                            <li>Loss of peripheral vision</li>
+                            <li>Seeing halos around lights</li>
+                            <li>Severe eye pain (acute)</li>
+                        </ul>
+                        <h4>Management:</h4>
+                        <p>Cannot be reversed, but progression can be slowed with medicated eye drops, laser therapy, or microsurgery.</p>
+                    </div>
+                </div>
+
+                <!-- Macular Degeneration -->
+                <div class="resource-card reveal">
+                    <div class="icon-box"><i data-lucide="minimize"></i></div>
+                    <h3>Macular Degeneration</h3>
+                    <p>Affects the macula (center of the retina), leading to loss of sharp, central vision. It is a major cause of vision loss in older adults.</p>
+                    <div class="condition-details">
+                        <h4>Symptoms:</h4>
+                        <ul>
+                            <li>Blurry central vision</li>
+                            <li>Straight lines look wavy</li>
+                            <li>Blind spots in center</li>
+                        </ul>
+                        <h4>Management:</h4>
+                        <p>Managed with nutritional supplements (AREDS2), specialized injections for the "wet" form, or laser therapy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .condition-details {
+            text-align: left;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0,0,0,0.05);
+        }
+        .condition-details h4 {
+            font-size: 0.9rem;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+        .condition-details ul {
+            margin-bottom: 15px;
+        }
+        .condition-details ul li {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 5px;
+            padding-left: 15px;
+            position: relative;
+        }
+        .condition-details ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+        .condition-details p {
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+    </style>
+
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="logo" style="margin-bottom: 20px;">
+                        <img src="assets/logo.jpg" alt="Project Nethsuwa Logo" class="footer-logo">
+                    </a>
+                    <p>Women Empowerment Avenue of Leo Club of University of Kelaniya. Dedicated to promoting social well-being and equal access to essential services.</p>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/leouok" target="_blank" rel="noopener noreferrer" class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+                        <a href="https://x.com/leo_uok" target="_blank" rel="noopener noreferrer" class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153zM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644z"/></svg></a>
+                        <a href="https://www.instagram.com/leo_uok/" target="_blank" rel="noopener noreferrer" class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+                        <a href="https://www.linkedin.com/company/leo-club-of-university-of-kelaniya" target="_blank" rel="noopener noreferrer" class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="eyecare.html">Eye Care</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i data-lucide="mail"></i> womenempowermentavenue@gmail.com</li>
+                        <li><i data-lucide="map-pin"></i> University of Kelaniya, Sri Lanka</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Project Nethsuwa. All Rights Reserved. | Developed by the IT Unit of Leo Club of University of Kelaniya.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
